@@ -14,7 +14,6 @@ export default function MovieDetails({ match }){
     const { loading, error, movie } = useSelector((state) => state.movieDetails)
     const [loginModal, setLoginModal] = useState(false)
 
-    const test = useSelector(state => state)
     useEffect(() => {
         dispatch(getMovieDetails(match.params.id)) 
     }, [dispatch, match])
