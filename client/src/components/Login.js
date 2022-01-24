@@ -5,12 +5,6 @@ import { ReactComponent as Loader } from '../assets/spiner-white.svg'
 import { Button } from '../styles/buttons'
 import {
   MainContainer,
-  LeftContainer,
-  RightContainer,
-  ContentContainer,
-  LogoContainer,
-  LogoLink,
-  Image,
   Form,
   Heading,
   Input,
