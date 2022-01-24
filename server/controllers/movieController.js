@@ -30,7 +30,7 @@ async function getMovies(req, res){
             let tvShows = await Movie.find({isMovie: false })
             sortData(movies, tvShows)
             movies = movies.filter((movie) => {return movie.avgRating === 5})
-            movies = tvShows.filter((tvShow) => {return tvShow.avgRating === 5})
+            tvShows = tvShows.filter((tvShow) => {return tvShow.avgRating === 5})
             return res.json({movies, tvShows})
         }
         if(word.includes('more') && word.includes('4') && word.includes('stars')){
@@ -38,7 +38,7 @@ async function getMovies(req, res){
             let tvShows = await Movie.find({isMovie: false })
             sortData(movies, tvShows)
             movies = movies.filter((movie) => {return movie.avgRating >= 4})
-            movies = tvShows.filter((tvShow) => {return tvShow.avgRating >= 4})
+            tvShows = tvShows.filter((tvShow) => {return tvShow.avgRating >= 4})
             return res.json({movies, tvShows})
         }
         if(word.includes('nineties') || word.includes('90`s')){
