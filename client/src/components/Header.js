@@ -31,7 +31,7 @@ export default function Header() {
                 (
                   <div style={{ float: 'right'}}>
                   <GoogleLogin 
-                    clientId={process.env.clientId}
+                    clientId='204203560782-1uqpc8qh6lva88biufhebp9j27uafa7e.apps.googleusercontent.com'
                     buttonText='Login with Google'
                     onSuccess={(response) => onSuccess(response)}
                   />
@@ -62,6 +62,7 @@ const HeaderDiv = styled.div`
   height: 80px;
   @media (max-width: 400px) {
     height: 150px;
+    flex-direction: column;
   }
 `
 
