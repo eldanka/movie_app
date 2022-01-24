@@ -62,6 +62,7 @@ export function register(username, email, password){
                 payload: data.message
             })
 
+            window.location.replace('http://localhost:3000/login')
             dispatch({
                 type: "USER_REGISTER_RESET"
             })
