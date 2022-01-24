@@ -17,7 +17,11 @@ export default function Home({ location }) {
   const { loading, error, movies, tvShows } = useSelector((state) => state.moviesList);
 
   useEffect(() => {
-    dispatch(listMovies(location.pathname, keyword));
+    if( keyword.length > 1){
+      dispatch(listMovies(location.pathname, keyword));
+    }else if( keyword.length === 0 ){
+      dispatch(listMovies(location.pathname, ''));
+    }
   }, [dispatch, location, keyword]);
 
 
