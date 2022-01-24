@@ -36,7 +36,7 @@ export default function Login({ history }){
 
   return (
     <MainContainer>
-        <div style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '50px'}}>
+        <div style={{ marginLeft: 'auto', marginRight: 'auto', marginTop: '50px', maxWidth: '350px'}}>
           {loading ? (
             <Loader />
           ) : (

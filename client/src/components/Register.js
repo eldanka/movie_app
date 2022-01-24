@@ -5,12 +5,6 @@ import { ReactComponent as Loader } from '../assets/spiner-color.svg'
 import { Button } from '../styles/buttons'
 import {
   MainContainer,
-  LeftContainer,
-  RightContainer,
-  ContentContainer,
-  LogoContainer,
-  LogoLink,
-  Image,
   Form,
   Heading,
   Input,
@@ -52,7 +46,7 @@ export default function Register({ history }) {
 
   return (
     <MainContainer>
-        <div style={{ marginRight: 'auto', marginLeft: 'auto', margiTop: '50px'}}>
+        <div style={{ marginRight: 'auto', marginLeft: 'auto', margiTop: '50px', width: '350px'}}>
           {loading ? (
             <Loader />
           ) : (
